@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Enter Fahrenheit temperature to convert to Celsius");
+            double tempF = double.Parse(Console.ReadLine());
+            Console.WriteLine(TempConverter.FahrenheittoCelsius(tempF));
+            Console.WriteLine("-----------------");
+            Console.WriteLine("Enter Celsius temperature to convert to Fahrenheit");
+            double tempC = double.Parse(Console.ReadLine());
+            Console.WriteLine(TempConverter.CelsiustoFahrenheit(tempC));
         }
     }
 }
